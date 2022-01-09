@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context=".MainActivity">
+
+    <com.otaliastudios.cameraview.CameraView
+        app:cameraFacing="back"
+        android:id="@+id/cameraPrev"
+        app:cameraAudio="on"
+        app:cameraAudioBitRate="0"
+        app:cameraVideoCodec="deviceDefault"
+        app:cameraVideoMaxSize="0"
+        app:cameraVideoMaxDuration="0"
+        app:cameraVideoBitRate="0"
+        app:cameraPreviewFrameRate="30"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/action"
+        android:text="Capture"
+        android:layout_margin="20dp"/>
+</LinearLayout>
