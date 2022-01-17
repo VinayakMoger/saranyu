@@ -23,7 +23,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:gravity="center"
-            android:text="00:00:00"
             android:id="@+id/timer"
             android:textColor="#f00"
             android:textSize="16sp" />
@@ -31,28 +30,30 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="right"
+            android:layout_gravity="end|bottom"
             android:id="@+id/flash"
-            android:layout_marginTop="20dp"
+            android:contentDescription="@string/todo"
+            android:layout_marginBottom="20dp"
             android:layout_marginEnd="20dp"
             android:src="@drawable/flash_off" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="right|bottom"
+            android:layout_gravity="end|top"
             android:id="@+id/camera_facing"
+            android:contentDescription="@string/todo"
             android:layout_marginEnd="20dp"
-            android:layout_marginBottom="40dp"
+            android:layout_marginTop="20dp"
             android:src="@drawable/rotate_camera" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/record_video"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom|center"
+            android:layout_gravity="end|center"
             android:layout_margin="16dp"
             android:backgroundTint="@color/white"
-            android:contentDescription="todo"
+            android:contentDescription="@string/todo"
             android:src="@drawable/record" />
     </FrameLayout>

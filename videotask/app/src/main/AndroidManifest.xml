@@ -20,7 +20,6 @@
 
         <activity
             android:name=".MainActivity"
-            android:configChanges="screenLayout|keyboardHidden"
             android:hardwareAccelerated="true"
             android:exported="true">
             <intent-filter>

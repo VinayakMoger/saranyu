@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">videotask</string>
+    <string name="todo">todo</string>
 </resources>
